@@ -5,7 +5,11 @@ import click
 
 from styledctk_widgets.__about__ import __version__
 from styledctk_widgets.CTK_Buttons import CTK_Button_styles
+from styledctk_widgets.CTK_Buttons import SCTkButton
+
 from styledctk_widgets.CTK_Entrys import CTK_Entry_styles
+from styledctk_widgets.CTK_Entrys import SCTKEntry
+
 
 
 @click.group(context_settings={"help_option_names": ["-h", "--help"]}, invoke_without_command=True)
@@ -17,6 +21,13 @@ def styledctk_widgets():
 @styledctk_widgets.command("showb")
 def showb():
     CTK_Button_styles.main()
+    
+    
+
+@styledctk_widgets.command("showsb")
+def showsb():
+    SCTkButton.main()
+        
     
     
 @styledctk_widgets.command("showe")
