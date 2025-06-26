@@ -7,7 +7,7 @@
 
 ## Table of Contents
 
-- [proj-template](#proj-template)
+- [styledctk-widgets](#styledctk-widgets)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [License](#license)
