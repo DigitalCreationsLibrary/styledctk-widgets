@@ -1,6 +1,4 @@
 import  styledctk_widgets.CTK_Buttons.SCTkButton as SCTk_B
-
-
 import customtkinter as ctk
 
 
