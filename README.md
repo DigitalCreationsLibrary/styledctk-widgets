@@ -1,4 +1,4 @@
-# proj-template
+# styledctk-widgets
 
 [![PyPI - Version](https://img.shields.io/pypi/v/styledctk-widgets.svg)](https://pypi.org/project/pstyledctk-widgets)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/styledctk-widgets.svg)](https://pypi.org/project/styledctk-widgets)
