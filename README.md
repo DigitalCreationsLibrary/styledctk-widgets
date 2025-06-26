@@ -27,7 +27,7 @@ pip install styledctk-widgets
 In the example, a SCTkButton is used. The theme number is 1, and the style number is 3
 
 ```python
-import  styledctk_widgets.CTK_Buttons.SCTkButton as SCTk_B
+import styledctk_widgets.CTK_Buttons.SCTkButton as SCTk_B
 import customtkinter as ctk
 
 
