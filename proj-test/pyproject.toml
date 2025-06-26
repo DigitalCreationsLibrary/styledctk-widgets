@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "styledctk-widgets"
+name = "proj-test"
 dynamic = ["version"]
 description = ''
 readme = "README.md"
@@ -26,39 +26,39 @@ classifiers = [
 ]
 dependencies = [
   "click",
-  "customtkinter>=5.2.2",
-
+  "customtkinter",
+  "styledctk-widgets"
 ]
 
 [project.urls]
-Documentation = "https://github.com/DigitalCreationsLibrary/styledctk_widgetse#readme"
-Issues = "https://github.com/DigitalCreationsLibrary/styledctk-widgets/issues"
-Source = "https://github.com/DigitalCreationsLibrary/styledctk-widgets"
+Documentation = "https://github.com/DigitalCreationsLibrary/proj-test#readme"
+Issues = "https://github.com/DigitalCreationsLibrary/proj-test/issues"
+Source = "https://github.com/DigitalCreationsLibrary/proj-test"
 
 [project.scripts]
-styledctk-widgets = "styledctk_widgets.cli:styledctk_widgets"
+proj-test = "proj_test.cli:proj_test"
 
 [tool.hatch.version]
-path = "src/styledctk_widgets/__about__.py"
+path = "src/proj_test/__about__.py"
 
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
 ]
 [tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/styledctk_widgets tests}"
+check = "mypy --install-types --non-interactive {args:src/proj_test tests}"
 
 [tool.coverage.run]
-source_pkgs = ["styledctk_widgets", "tests"]
+source_pkgs = ["proj_test", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/styledctk_widgets/__about__.py",
+  "src/proj_test/__about__.py",
 ]
 
 [tool.coverage.paths]
-styledctk_widgets = ["src/styledctk_widgets", "*/styledctk-widgets/src/styledctk_widgets"]
-tests = ["tests", "*/styledctk-widgets/tests"]
+proj_test = ["src/proj_test", "*/proj-test/src/proj_test"]
+tests = ["tests", "*/proj-test/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
